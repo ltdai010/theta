@@ -19,7 +19,7 @@ package vm
 import (
 	"math/big"
 
-	"github.com/ltdai010/theta/common/math"
+	"theta/common/math"
 )
 
 func memorySha3(stack *Stack) *big.Int {

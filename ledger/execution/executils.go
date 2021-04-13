@@ -4,11 +4,11 @@ import (
 	"encoding/hex"
 	"math/big"
 
-	"github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/common/result"
-	"github.com/ltdai010/theta/core"
-	"github.com/ltdai010/theta/ledger/state"
-	"github.com/ltdai010/theta/ledger/types"
+	"theta/common"
+	"theta/common/result"
+	"theta/core"
+	"theta/ledger/state"
+	"theta/ledger/types"
 )
 
 // --------------------------------- Execution Utilities -------------------------------------

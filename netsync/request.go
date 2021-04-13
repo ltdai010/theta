@@ -11,12 +11,12 @@ import (
 
 	lru "github.com/hashicorp/golang-lru"
 	"github.com/spf13/viper"
-	"github.com/ltdai010/theta/blockchain"
-	"github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/common/util"
-	"github.com/ltdai010/theta/core"
-	"github.com/ltdai010/theta/dispatcher"
-	rp "github.com/ltdai010/theta/report"
+	"theta/blockchain"
+	"theta/common"
+	"theta/common/util"
+	"theta/core"
+	"theta/dispatcher"
+	rp "theta/report"
 
 	log "github.com/sirupsen/logrus"
 )

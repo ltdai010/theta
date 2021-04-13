@@ -21,11 +21,11 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/common/math"
-	"github.com/ltdai010/theta/crypto"
-	"github.com/ltdai010/theta/crypto/bn256"
-	"github.com/ltdai010/theta/ledger/vm/params"
+	"theta/common"
+	"theta/common/math"
+	"theta/crypto"
+	"theta/crypto/bn256"
+	"theta/ledger/vm/params"
 	"golang.org/x/crypto/ripemd160"
 )
 

@@ -10,13 +10,13 @@ import (
 
 	log "github.com/sirupsen/logrus"
 	"github.com/stretchr/testify/assert"
-	"github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/common/result"
-	"github.com/ltdai010/theta/core"
-	dp "github.com/ltdai010/theta/dispatcher"
-	p2psim "github.com/ltdai010/theta/p2p/simulation"
-	p2ptypes "github.com/ltdai010/theta/p2p/types"
-	"github.com/ltdai010/theta/rlp"
+	"theta/common"
+	"theta/common/result"
+	"theta/core"
+	dp "theta/dispatcher"
+	p2psim "theta/p2p/simulation"
+	p2ptypes "theta/p2p/types"
+	"theta/rlp"
 )
 
 func TestMempoolBasics(t *testing.T) {

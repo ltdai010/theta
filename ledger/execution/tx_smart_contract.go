@@ -4,13 +4,13 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/ltdai010/theta/blockchain"
-	"github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/common/result"
-	"github.com/ltdai010/theta/core"
-	st "github.com/ltdai010/theta/ledger/state"
-	"github.com/ltdai010/theta/ledger/types"
-	"github.com/ltdai010/theta/ledger/vm"
+	"theta/blockchain"
+	"theta/common"
+	"theta/common/result"
+	"theta/core"
+	st "theta/ledger/state"
+	"theta/ledger/types"
+	"theta/ledger/vm"
 )
 
 var _ TxExecutor = (*SmartContractTxExecutor)(nil)

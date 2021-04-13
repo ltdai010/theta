@@ -8,11 +8,11 @@ import (
 	"time"
 
 	"github.com/spf13/viper"
-	"github.com/ltdai010/theta/common"
-	cn "github.com/ltdai010/theta/p2p/connection"
-	"github.com/ltdai010/theta/p2p/netutil"
-	pr "github.com/ltdai010/theta/p2p/peer"
-	p2ptypes "github.com/ltdai010/theta/p2p/types"
+	"theta/common"
+	cn "theta/p2p/connection"
+	"theta/p2p/netutil"
+	pr "theta/p2p/peer"
+	p2ptypes "theta/p2p/types"
 )
 
 //

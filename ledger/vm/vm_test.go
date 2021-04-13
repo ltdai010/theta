@@ -9,10 +9,10 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/ledger/state"
-	"github.com/ltdai010/theta/ledger/types"
-	"github.com/ltdai010/theta/store/database/backend"
+	"theta/common"
+	"theta/ledger/state"
+	"theta/ledger/types"
+	"theta/store/database/backend"
 )
 
 func TestVMBasic(t *testing.T) {

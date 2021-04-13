@@ -23,12 +23,12 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/ltdai010/theta/store"
-	"github.com/ltdai010/theta/store/database"
+	"theta/store"
+	"theta/store/database"
 
-	"github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/common/metrics"
-	"github.com/ltdai010/theta/crypto"
+	"theta/common"
+	"theta/common/metrics"
+	"theta/crypto"
 )
 
 var (

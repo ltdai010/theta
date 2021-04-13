@@ -1,8 +1,8 @@
 package core
 
 import (
-	"github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/crypto"
+	"theta/common"
+	"theta/crypto"
 )
 
 // ConsensusEngine is the interface of a consensus engine.

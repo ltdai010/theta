@@ -8,16 +8,16 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ltdai010/theta/blockchain"
-	"github.com/ltdai010/theta/crypto/bls"
+	"theta/blockchain"
+	"theta/crypto/bls"
 
-	"github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/core"
-	"github.com/ltdai010/theta/crypto"
-	"github.com/ltdai010/theta/ledger/state"
-	"github.com/ltdai010/theta/ledger/types"
-	"github.com/ltdai010/theta/mempool"
-	"github.com/ltdai010/theta/version"
+	"theta/common"
+	"theta/core"
+	"theta/crypto"
+	"theta/ledger/state"
+	"theta/ledger/types"
+	"theta/mempool"
+	"theta/version"
 )
 
 // ------------------------------- GetVersion -----------------------------------

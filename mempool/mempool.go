@@ -10,14 +10,14 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/common/clist"
-	"github.com/ltdai010/theta/common/math"
-	"github.com/ltdai010/theta/common/pqueue"
-	"github.com/ltdai010/theta/common/result"
-	"github.com/ltdai010/theta/consensus"
-	"github.com/ltdai010/theta/core"
-	dp "github.com/ltdai010/theta/dispatcher"
+	"theta/common"
+	"theta/common/clist"
+	"theta/common/math"
+	"theta/common/pqueue"
+	"theta/common/result"
+	"theta/consensus"
+	"theta/core"
+	dp "theta/dispatcher"
 )
 
 var logger *log.Entry = log.WithFields(log.Fields{"prefix": "mempool"})

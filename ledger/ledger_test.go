@@ -6,18 +6,18 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ltdai010/theta/crypto/bls"
+	"theta/crypto/bls"
 
 	log "github.com/sirupsen/logrus"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/common/result"
-	"github.com/ltdai010/theta/core"
-	st "github.com/ltdai010/theta/ledger/state"
-	"github.com/ltdai010/theta/ledger/types"
-	"github.com/ltdai010/theta/store/database/backend"
+	"theta/common"
+	"theta/common/result"
+	"theta/core"
+	st "theta/ledger/state"
+	"theta/ledger/types"
+	"theta/store/database/backend"
 )
 
 func TestLedgerSetup(t *testing.T) {

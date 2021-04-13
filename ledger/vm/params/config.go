@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/ltdai010/theta/common"
+	"theta/common"
 )
 
 // Genesis hashes to enforce below configs on.

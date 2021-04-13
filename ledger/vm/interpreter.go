@@ -20,8 +20,8 @@ import (
 	"fmt"
 	"sync/atomic"
 
-	"github.com/ltdai010/theta/common/math"
-	"github.com/ltdai010/theta/ledger/vm/params"
+	"theta/common/math"
+	"theta/ledger/vm/params"
 )
 
 // Config are the configuration options for the Interpreter

@@ -5,8 +5,8 @@ import (
 	"time"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/core"
+	"theta/common"
+	"theta/core"
 )
 
 func TestTxCallbackManager(t *testing.T) {

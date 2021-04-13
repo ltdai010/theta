@@ -6,13 +6,13 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/ledger/types"
-	"github.com/ltdai010/theta/rpc"
+	"theta/common"
+	"theta/ledger/types"
+	"theta/rpc"
 
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
-	"github.com/ltdai010/theta/cmd/thetacli/cmd/utils"
+	"theta/cmd/thetacli/cmd/utils"
 
 	rpcc "github.com/ybbus/jsonrpc"
 )

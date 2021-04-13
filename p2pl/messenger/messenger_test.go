@@ -8,10 +8,10 @@ import (
 	"time"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/crypto"
-	p2ptypes "github.com/ltdai010/theta/p2p/types"
-	"github.com/ltdai010/theta/rlp"
+	"theta/common"
+	"theta/crypto"
+	p2ptypes "theta/p2p/types"
+	"theta/rlp"
 )
 
 type MockMsgHandler struct {

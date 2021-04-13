@@ -6,8 +6,8 @@ import (
 	"path"
 	"strings"
 
-	"github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/common/util"
+	"theta/common"
+	"theta/common/util"
 
 	homedir "github.com/mitchellh/go-homedir"
 	"github.com/spf13/cobra"

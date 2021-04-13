@@ -1,7 +1,9 @@
-module github.com/ltdai010/theta
+module theta
 
 require (
+	github.com/OpenStars/thriftpoolv2 v0.0.0-20200306081147-89225e956ca9
 	github.com/aerospike/aerospike-client-go v1.36.0
+	github.com/apache/thrift v0.13.0
 	github.com/bgentry/speakeasy v0.1.0
 	github.com/davecgh/go-spew v1.1.1
 	github.com/dgraph-io/badger v1.6.0-rc1

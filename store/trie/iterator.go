@@ -22,8 +22,8 @@ import (
 	"container/heap"
 	"errors"
 
-	"github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/rlp"
+	"theta/common"
+	"theta/rlp"
 )
 
 // Iterator is a key-value trie iterator that traverses a Trie.

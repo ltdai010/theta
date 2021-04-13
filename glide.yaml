@@ -1,4 +1,4 @@
-package: github.com/ltdai010/theta
+package: theta
 import:
 - package: github.com/sirupsen/logrus
   version: ^1.0.5

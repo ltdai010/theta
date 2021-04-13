@@ -8,9 +8,9 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/ltdai010/theta/common"
-	mm "github.com/ltdai010/theta/common/math"
-	nu "github.com/ltdai010/theta/p2p/netutil"
+	"theta/common"
+	mm "theta/common/math"
+	nu "theta/p2p/netutil"
 
 	"github.com/spf13/viper"
 	"github.com/syndtr/goleveldb/leveldb"

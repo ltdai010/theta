@@ -3,9 +3,9 @@ package keystore
 import (
 	"io"
 
-	"github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/crypto"
-	"github.com/ltdai010/theta/wallet/types"
+	"theta/common"
+	"theta/crypto"
+	"theta/wallet/types"
 )
 
 // Driver abstracts the functionality of the hardware wallet

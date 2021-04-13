@@ -2,7 +2,7 @@ FROM golang:1.11
 
 VOLUME ["/go"]
 
-WORKDIR /go/src/github.com/ltdai010/theta/
+WORKDIR /go/src/theta/
 
 ENV GOPATH=/go
 
@@ -10,7 +10,7 @@ ENV CGO_ENABLED=1
 
 ENV GO111MODULE=on
 
-CMD ["/go/src/github.com/ltdai010/theta/integration/docker/build/start.sh"]
+CMD ["/go/src/theta/integration/docker/build/start.sh"]
 
 
 

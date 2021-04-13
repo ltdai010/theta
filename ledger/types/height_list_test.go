@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/ltdai010/theta/rlp"
+	"theta/rlp"
 )
 
 func TestHeightListRLPEncoding(t *testing.T) {

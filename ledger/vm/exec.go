@@ -4,12 +4,12 @@ import (
 	"math"
 	"math/big"
 
-	"github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/core"
-	"github.com/ltdai010/theta/crypto"
-	"github.com/ltdai010/theta/ledger/state"
-	"github.com/ltdai010/theta/ledger/types"
-	"github.com/ltdai010/theta/ledger/vm/params"
+	"theta/common"
+	"theta/core"
+	"theta/crypto"
+	"theta/ledger/state"
+	"theta/ledger/types"
+	"theta/ledger/vm/params"
 )
 
 // Execute executes the given smart contract

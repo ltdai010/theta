@@ -19,7 +19,7 @@ package vm
 import (
 	"fmt"
 
-	"github.com/ltdai010/theta/ledger/vm/params"
+	"theta/ledger/vm/params"
 )
 
 func makeStackFunc(pop, push int) stackValidationFunc {

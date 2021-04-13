@@ -6,17 +6,17 @@ import (
 	"math/big"
 	"strings"
 
-	"github.com/ltdai010/theta/crypto"
+	"theta/crypto"
 
-	"github.com/ltdai010/theta/crypto/bls"
+	"theta/crypto/bls"
 
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
-	"github.com/ltdai010/theta/cmd/thetacli/cmd/utils"
-	"github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/core"
-	"github.com/ltdai010/theta/ledger/types"
-	"github.com/ltdai010/theta/rpc"
+	"theta/cmd/thetacli/cmd/utils"
+	"theta/common"
+	"theta/core"
+	"theta/ledger/types"
+	"theta/rpc"
 
 	rpcc "github.com/ybbus/jsonrpc"
 )

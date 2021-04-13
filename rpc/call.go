@@ -4,10 +4,10 @@ import (
 	"encoding/hex"
 	"fmt"
 
-	"github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/ledger/state"
-	"github.com/ltdai010/theta/ledger/types"
-	"github.com/ltdai010/theta/ledger/vm"
+	"theta/common"
+	"theta/ledger/state"
+	"theta/ledger/types"
+	"theta/ledger/vm"
 )
 
 // ------------------------------- CallSmartContract -----------------------------------

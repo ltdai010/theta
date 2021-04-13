@@ -1,7 +1,7 @@
 package store
 
 import (
-	"github.com/ltdai010/theta/common"
+	"theta/common"
 )
 
 // Store is the interface for key/value storages.

@@ -7,9 +7,9 @@ import (
 	"io"
 	"math/big"
 
-	"github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/common/hexutil"
-	"github.com/ltdai010/theta/rlp"
+	"theta/common"
+	"theta/common/hexutil"
+	"theta/rlp"
 )
 
 //

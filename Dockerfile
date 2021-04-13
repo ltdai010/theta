@@ -1,7 +1,7 @@
 FROM golang:latest
 ENV GOPATH=/app
 ENV PATH=$GOPATH/bin:$PATH
-WORKDIR /app/src/github.com/ltdai010/theta
+WORKDIR /app/src/theta
 COPY . .
 RUN make install
 RUN cp -r ./integration/testnet_amber ../

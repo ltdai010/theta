@@ -19,7 +19,7 @@ package vm
 import (
 	"testing"
 
-	"github.com/ltdai010/theta/crypto"
+	"theta/crypto"
 )
 
 func TestJumpDestAnalysis(t *testing.T) {

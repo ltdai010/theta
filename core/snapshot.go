@@ -9,8 +9,8 @@ import (
 	"io"
 	"os"
 
-	"github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/rlp"
+	"theta/common"
+	"theta/rlp"
 )
 
 const SnapshotHeaderMagic = "ThetaToDaMoon"

@@ -8,11 +8,11 @@ import (
 	"io"
 	"math/big"
 
-	"github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/common/result"
-	"github.com/ltdai010/theta/crypto"
-	"github.com/ltdai010/theta/rlp"
-	"github.com/ltdai010/theta/store/trie"
+	"theta/common"
+	"theta/common/result"
+	"theta/crypto"
+	"theta/rlp"
+	"theta/store/trie"
 )
 
 const (

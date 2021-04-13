@@ -4,6 +4,7 @@ import (
 	"context"
 	"encoding/hex"
 	"encoding/json"
+	"errors"
 	"fmt"
 	"github.com/pborman/uuid"
 	"io/ioutil"
@@ -37,13 +38,52 @@ func (r *RpcHandler) GetAccount(ctx context.Context, address string) (*theta.Acc
 		return nil, err
 	}
 	result := theta.AccountResult_{}
-	err = json.Unmarshal(body, &theta.AccountResult_{})
+	err = json.Unmarshal(body, &result)
 	if err != nil {
 		log.Println(err)
 		return nil, err
 	}
+	if result.Error != nil && result.Error.Code != 0 {
+		return nil, errors.New(result.Error.Message)
+	}
+
+	log.Println(result)
 
 	return result.Result_, nil
+}
+
+func (r *RpcHandler) GetTokenBalance(context context.Context, address string, contractAddress string) {
+	prefix := "70a08231"
+	data := prefix + "000000000000000000000000" + address
+
+	from := types.TxInput{
+		Address: common.HexToAddress(""),
+		Coins: types.Coins{
+			ThetaWei: new(big.Int).SetUint64(0),
+			TFuelWei: big.NewInt(0),
+		},
+		Sequence: 0,
+	}
+
+	to := types.TxOutput{
+		Address: common.HexToAddress(contractAddress),
+	}
+
+	dataHex, err := hex.DecodeString(data)
+	if err != nil {
+		return
+	}
+
+	smartContractTx := &types.SmartContractTx{
+		From:     from,
+		To:       to,
+		GasLimit: 0,
+		GasPrice: big.NewInt(0),
+		Data:     dataHex,
+	}
+
+	smartContractTx.SignBytes("privatenet")
+
 }
 
 func (r *RpcHandler) SendTx(context context.Context, send *theta.Send) (*theta.BroadcastRawTransactionAsync, error) {
@@ -84,7 +124,7 @@ func (r *RpcHandler) SendTx(context context.Context, send *theta.Send) (*theta.B
 			TFuelWei: new(big.Int).Add(tfuelwei, fee),
 			ThetaWei: thetawei,
 		},
-		Sequence: uint64(seq),
+		Sequence: uint64(seq + 1),
 	}}
 	outputs := []types.TxOutput{{
 		Address: to,
@@ -102,9 +142,16 @@ func (r *RpcHandler) SendTx(context context.Context, send *theta.Send) (*theta.B
 		Outputs: outputs,
 	}
 
-	privateKey, err := crypto.PrivateKeyFromBytes([]byte(send.PrivateKey))
+	decoded, err := hex.DecodeString(send.PrivateKey)
 	if err != nil {
 		log.Println(err)
+		return nil, err
+	}
+
+	privateKey, err := crypto.PrivateKeyFromBytes(decoded)
+	if err != nil {
+		log.Println("thriftrpcserver/handler.go:109", err)
+		log.Println(len(decoded))
 		return nil, err
 	}
 
@@ -146,6 +193,13 @@ func (r *RpcHandler) SendTx(context context.Context, send *theta.Send) (*theta.B
 		log.Println(err)
 		return nil, err
 	}
+
+	if result.Error != nil && result.Error.Code != 0 {
+		return nil, errors.New(result.Error.Message)
+	}
+
+	log.Println(result)
+	log.Println(string(body))
 
 	return result.Result_, nil
 }

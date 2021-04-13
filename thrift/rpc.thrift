@@ -167,14 +167,21 @@ struct Send {
 
 struct AccountResult {
     1: string jsonrpc,
-    2: string id,
+    2: i32 id,
     3: Account result
+    4: Error error
 }
 
 struct BroadcastRawTransactionAsyncResult {
     1: string jsonrpc,
-    2: string id,
-    3: BroadcastRawTransactionAsync result
+    2: i32 id,
+    3: BroadcastRawTransactionAsync result,
+    4: Error error
+}
+
+struct Error {
+    1: i32 code,
+    2: string message
 }
 
 service ThetaService{

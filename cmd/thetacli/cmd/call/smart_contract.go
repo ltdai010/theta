@@ -10,10 +10,10 @@ import (
 	"github.com/spf13/viper"
 	rpcc "github.com/ybbus/jsonrpc"
 
-	"github.com/ltdai010/theta/cmd/thetacli/cmd/utils"
-	"github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/ledger/types"
-	"github.com/ltdai010/theta/rpc"
+	"theta/cmd/thetacli/cmd/utils"
+	"theta/common"
+	"theta/ledger/types"
+	"theta/rpc"
 )
 
 // smartContractCmd represents the smart_contract command, which can be used to calls the specified smart contract.

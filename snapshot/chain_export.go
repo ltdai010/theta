@@ -9,9 +9,9 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/ltdai010/theta/blockchain"
-	"github.com/ltdai010/theta/core"
-	"github.com/ltdai010/theta/rlp"
+	"theta/blockchain"
+	"theta/core"
+	"theta/rlp"
 )
 
 func ExportChainBackup(chain *blockchain.Chain, startHeight, endHeight uint64, backupDir string) (actualStartHeight, actualEndHeight uint64, backupFile string, err error) {

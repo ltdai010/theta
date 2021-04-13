@@ -6,13 +6,13 @@ import (
 	"math/big"
 
 	log "github.com/sirupsen/logrus"
-	"github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/core"
-	"github.com/ltdai010/theta/crypto"
-	"github.com/ltdai010/theta/ledger/types"
-	"github.com/ltdai010/theta/rlp"
-	"github.com/ltdai010/theta/store/database"
-	"github.com/ltdai010/theta/store/treestore"
+	"theta/common"
+	"theta/core"
+	"theta/crypto"
+	"theta/ledger/types"
+	"theta/rlp"
+	"theta/store/database"
+	"theta/store/treestore"
 )
 
 var logger *log.Entry = log.WithFields(log.Fields{"prefix": "ledger"})

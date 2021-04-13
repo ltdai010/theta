@@ -4,13 +4,13 @@ import (
 	"encoding/hex"
 	"testing"
 
-	"github.com/ltdai010/theta/crypto/bls"
+	"theta/crypto/bls"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/crypto"
-	"github.com/ltdai010/theta/rlp"
+	"theta/common"
+	"theta/crypto"
+	"theta/rlp"
 )
 
 func TestPubKey(t *testing.T) {

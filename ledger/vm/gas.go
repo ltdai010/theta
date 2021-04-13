@@ -19,7 +19,7 @@ package vm
 import (
 	"math/big"
 
-	"github.com/ltdai010/theta/ledger/vm/params"
+	"theta/ledger/vm/params"
 )
 
 // Gas costs

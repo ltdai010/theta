@@ -8,11 +8,11 @@ import (
 
 	log "github.com/sirupsen/logrus"
 	"github.com/stretchr/testify/assert"
-	"github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/crypto"
-	"github.com/ltdai010/theta/p2p"
-	p2ptypes "github.com/ltdai010/theta/p2p/types"
-	"github.com/ltdai010/theta/rlp"
+	"theta/common"
+	"theta/crypto"
+	"theta/p2p"
+	p2ptypes "theta/p2p/types"
+	"theta/rlp"
 )
 
 func TestMessengerBroadcastMessages(t *testing.T) {

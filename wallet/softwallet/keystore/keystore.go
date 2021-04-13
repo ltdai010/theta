@@ -5,7 +5,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/ltdai010/theta/common"
+	"theta/common"
 )
 
 type AddressFormat int

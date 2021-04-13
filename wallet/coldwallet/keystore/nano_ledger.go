@@ -30,10 +30,10 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/common/hexutil"
-	"github.com/ltdai010/theta/crypto"
-	"github.com/ltdai010/theta/wallet/types"
+	"theta/common"
+	"theta/common/hexutil"
+	"theta/crypto"
+	"theta/wallet/types"
 )
 
 var logger *log.Entry = log.WithFields(log.Fields{"prefix": "wallet"})

@@ -7,9 +7,9 @@ import (
 
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
-	"github.com/ltdai010/theta/cmd/thetacli/cmd/utils"
-	"github.com/ltdai010/theta/ledger/types"
-	"github.com/ltdai010/theta/rpc"
+	"theta/cmd/thetacli/cmd/utils"
+	"theta/ledger/types"
+	"theta/rpc"
 
 	rpcc "github.com/ybbus/jsonrpc"
 )

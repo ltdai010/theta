@@ -1,7 +1,7 @@
 package rpc
 
 import (
-	"github.com/ltdai010/theta/common"
+	"theta/common"
 )
 
 // ------------------------------- UnlockKey -----------------------------------

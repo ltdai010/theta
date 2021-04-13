@@ -23,8 +23,8 @@ package types
 // 	"testing"
 
 // 	"github.com/davecgh/go-spew/spew"
-// 	"github.com/ltdai010/theta/common"
-// 	"github.com/ltdai010/theta/common/hexutil"
+// 	"theta/common"
+// 	"theta/common/hexutil"
 // )
 
 // var unmarshalLogTests = map[string]struct {

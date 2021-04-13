@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 
 	"github.com/dgraph-io/badger"
-	"github.com/ltdai010/theta/store"
-	"github.com/ltdai010/theta/store/database"
+	"theta/store"
+	"theta/store/database"
 )
 
 // BadgerDatabase a MongoDB (using badger driver) wrapped object.

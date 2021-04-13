@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/ltdai010/theta/core"
-	"github.com/ltdai010/theta/ledger/types"
-	"github.com/ltdai010/theta/rlp"
+	"theta/core"
+	"theta/ledger/types"
+	"theta/rlp"
 )
 
 func handleError(err error) {

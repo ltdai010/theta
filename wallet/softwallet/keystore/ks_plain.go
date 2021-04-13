@@ -11,8 +11,8 @@ import (
 	"strings"
 
 	"github.com/pborman/uuid"
-	"github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/crypto"
+	"theta/common"
+	"theta/crypto"
 )
 
 var _ Keystore = (*KeystorePlain)(nil)

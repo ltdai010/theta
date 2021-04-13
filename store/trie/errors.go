@@ -20,7 +20,7 @@ package trie
 import (
 	"fmt"
 
-	"github.com/ltdai010/theta/common"
+	"theta/common"
 )
 
 // MissingNodeError is returned by the trie functions (TryGet, TryUpdate, TryDelete)

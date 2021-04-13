@@ -4,9 +4,9 @@ import (
 	"fmt"
 
 	"github.com/spf13/cobra"
-	"github.com/ltdai010/theta/cmd/thetacli/cmd/utils"
-	"github.com/ltdai010/theta/wallet"
-	wtypes "github.com/ltdai010/theta/wallet/types"
+	"theta/cmd/thetacli/cmd/utils"
+	"theta/wallet"
+	wtypes "theta/wallet/types"
 )
 
 // newCmd generates a new key

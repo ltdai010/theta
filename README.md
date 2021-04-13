@@ -26,11 +26,11 @@ brew install go@1.12.1
 brew link go@1.12.1 --force
 ```
 
-Clone this repo into your `$GOPATH`. The path should look like this: `$GOPATH/src/github.com/ltdai010/theta`
+Clone this repo into your `$GOPATH`. The path should look like this: `$GOPATH/src/theta`
 
 ```
-git clone https://github.com/ltdai010/theta-protocol-ledger.git $GOPATH/src/github.com/ltdai010/theta
-export THETA_HOME=$GOPATH/src/github.com/ltdai010/theta
+git clone https://theta-protocol-ledger.git $GOPATH/src/theta
+export THETA_HOME=$GOPATH/src/theta
 cd $THETA_HOME
 ```
 
@@ -191,4 +191,4 @@ The return should look like the json below. As we can see, 100 TFuel (= 10000000
     ...
 }
 ```
-From the reserved fund, the sender can send tokens to multiple parties with a special off-chain [Service Payment Transaction](https://github.com/ltdai010/theta-protocol-ledger/blob/ed3d616eca7e3de2c19f63351716aba7547a1e4c/ledger/types/tx.go#L321). Before the reserved fund expires (1002 blocktimes), whenever a recipient wants to receive the tokens, he simply signs the last received service payment transaction, and [submits the signed raw transaction to the Ledger node](https://github.com/ltdai010/theta-protocol-ledger/blob/ed3d616eca7e3de2c19f63351716aba7547a1e4c/rpc/tx.go#L11). A sender might send the recipient multiple off-chain transactions before the recipient signs and submits the last transaction to receive the full amount. This mechanism achieves the "pay-per-byte" granularity, and yet could reduce the amount of on-chain transactions by several orders of magnitude. For more details, please refer to the "Off-Chain Micropayment Support" section of our [technical whitepaper](docs/theta-technical-whitepaper.pdf).
+From the reserved fund, the sender can send tokens to multiple parties with a special off-chain [Service Payment Transaction](https://theta-protocol-ledger/blob/ed3d616eca7e3de2c19f63351716aba7547a1e4c/ledger/types/tx.go#L321). Before the reserved fund expires (1002 blocktimes), whenever a recipient wants to receive the tokens, he simply signs the last received service payment transaction, and [submits the signed raw transaction to the Ledger node](https://theta-protocol-ledger/blob/ed3d616eca7e3de2c19f63351716aba7547a1e4c/rpc/tx.go#L11). A sender might send the recipient multiple off-chain transactions before the recipient signs and submits the last transaction to receive the full amount. This mechanism achieves the "pay-per-byte" granularity, and yet could reduce the amount of on-chain transactions by several orders of magnitude. For more details, please refer to the "Off-Chain Micropayment Support" section of our [technical whitepaper](docs/theta-technical-whitepaper.pdf).

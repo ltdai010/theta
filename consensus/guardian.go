@@ -6,10 +6,10 @@ import (
 
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/viper"
-	"github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/common/util"
-	"github.com/ltdai010/theta/core"
-	"github.com/ltdai010/theta/crypto/bls"
+	"theta/common"
+	"theta/common/util"
+	"theta/core"
+	"theta/crypto/bls"
 )
 
 const (

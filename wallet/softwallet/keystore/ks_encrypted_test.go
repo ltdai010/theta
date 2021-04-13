@@ -24,7 +24,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/ltdai010/theta/common"
+	"theta/common"
 )
 
 func Test_PBKDF2_1(t *testing.T) {

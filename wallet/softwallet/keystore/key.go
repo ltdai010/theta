@@ -2,9 +2,10 @@ package keystore
 
 import (
 	"github.com/pborman/uuid"
+	"log"
 
-	"github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/crypto"
+	"theta/common"
+	"theta/crypto"
 )
 
 type Key struct {
@@ -23,6 +24,7 @@ func NewKey(privKey *crypto.PrivateKey) *Key {
 }
 
 func (key *Key) Sign(data common.Bytes) (*crypto.Signature, error) {
+	log.Println(key.PrivateKey.ToBytes(), " wallet/softwallet/keystore/key.go:27")
 	sig, err := key.PrivateKey.Sign(data)
 	return sig, err
 }

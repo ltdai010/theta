@@ -5,7 +5,7 @@ import (
 	"math/big"
 	"strconv"
 
-	"github.com/ltdai010/theta/common/hexutil"
+	"theta/common/hexutil"
 )
 
 type JSONBig big.Int

@@ -4,11 +4,11 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/ltdai010/theta/blockchain"
-	"github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/core"
-	"github.com/ltdai010/theta/store/database/backend"
-	"github.com/ltdai010/theta/store/kvstore"
+	"theta/blockchain"
+	"theta/common"
+	"theta/core"
+	"theta/store/database/backend"
+	"theta/store/kvstore"
 )
 
 func TestConsensusStateBasic(t *testing.T) {

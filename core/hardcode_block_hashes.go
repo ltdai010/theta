@@ -1,6 +1,6 @@
 package core
 
-import "github.com/ltdai010/theta/common"
+import "theta/common"
 
 type HardcodeBlockHash struct {
 	Height    uint64

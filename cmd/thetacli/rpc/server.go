@@ -13,13 +13,13 @@ import (
 
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/viper"
-	"github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/common/util"
-	"github.com/ltdai010/theta/rpc/lib/rpc-codec/jsonrpc2"
-	wl "github.com/ltdai010/theta/wallet"
-	wt "github.com/ltdai010/theta/wallet/types"
 	"golang.org/x/net/netutil"
 	"golang.org/x/net/websocket"
+	"theta/common"
+	"theta/common/util"
+	"theta/rpc/lib/rpc-codec/jsonrpc2"
+	wl "theta/wallet"
+	wt "theta/wallet/types"
 )
 
 var logger *log.Entry

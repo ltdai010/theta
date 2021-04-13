@@ -21,9 +21,9 @@ import (
 	"hash"
 	"sync"
 
-	"github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/crypto/sha3"
-	"github.com/ltdai010/theta/rlp"
+	"theta/common"
+	"theta/crypto/sha3"
+	"theta/rlp"
 )
 
 type hasher struct {

@@ -17,9 +17,9 @@
 package vm
 
 import (
-	"github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/common/math"
-	"github.com/ltdai010/theta/ledger/vm/params"
+	"theta/common"
+	"theta/common/math"
+	"theta/ledger/vm/params"
 )
 
 // memoryGasCosts calculates the quadratic gas for memory expansion. It does so

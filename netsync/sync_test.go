@@ -5,22 +5,22 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ltdai010/theta/consensus"
-	"github.com/ltdai010/theta/rlp"
-	"github.com/ltdai010/theta/store/database/backend"
-	"github.com/ltdai010/theta/store/kvstore"
+	"theta/consensus"
+	"theta/rlp"
+	"theta/store/database/backend"
+	"theta/store/kvstore"
 
-	"github.com/ltdai010/theta/core"
-	"github.com/ltdai010/theta/crypto"
-	"github.com/ltdai010/theta/ledger"
+	"theta/core"
+	"theta/crypto"
+	"theta/ledger"
 
-	"github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/dispatcher"
+	"theta/common"
+	"theta/dispatcher"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/ltdai010/theta/blockchain"
-	"github.com/ltdai010/theta/p2p/simulation"
-	"github.com/ltdai010/theta/p2p/types"
+	"theta/blockchain"
+	"theta/p2p/simulation"
+	"theta/p2p/types"
 )
 
 type MockMessageConsumer struct {

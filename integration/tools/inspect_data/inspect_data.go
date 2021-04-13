@@ -8,13 +8,13 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/ltdai010/theta/blockchain"
-	"github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/core"
-	"github.com/ltdai010/theta/ledger/types"
-	"github.com/ltdai010/theta/rlp"
-	"github.com/ltdai010/theta/store/database/backend"
-	"github.com/ltdai010/theta/store/trie"
+	"theta/blockchain"
+	"theta/common"
+	"theta/core"
+	"theta/ledger/types"
+	"theta/rlp"
+	"theta/store/database/backend"
+	"theta/store/trie"
 )
 
 func handleError(err error) {

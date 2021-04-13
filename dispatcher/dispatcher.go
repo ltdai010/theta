@@ -7,10 +7,10 @@ import (
 
 	"github.com/spf13/viper"
 
-	"github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/p2p"
-	p2ptypes "github.com/ltdai010/theta/p2p/types"
-	"github.com/ltdai010/theta/p2pl"
+	"theta/common"
+	"theta/p2p"
+	p2ptypes "theta/p2p/types"
+	"theta/p2pl"
 
 	log "github.com/sirupsen/logrus"
 )

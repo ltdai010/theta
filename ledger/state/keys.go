@@ -1,6 +1,6 @@
 package state
 
-import "github.com/ltdai010/theta/common"
+import "theta/common"
 
 //
 // ------------------------- Ledger State Keys -------------------------

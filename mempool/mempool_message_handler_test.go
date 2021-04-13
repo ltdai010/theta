@@ -5,10 +5,10 @@ import (
 
 	log "github.com/sirupsen/logrus"
 	"github.com/stretchr/testify/assert"
-	"github.com/ltdai010/theta/common"
-	dp "github.com/ltdai010/theta/dispatcher"
-	p2psim "github.com/ltdai010/theta/p2p/simulation"
-	"github.com/ltdai010/theta/rlp"
+	"theta/common"
+	dp "theta/dispatcher"
+	p2psim "theta/p2p/simulation"
+	"theta/rlp"
 )
 
 func TestMempoolMessageHandler(t *testing.T) {

@@ -15,13 +15,13 @@ import (
 	log "github.com/sirupsen/logrus"
 
 	"github.com/spf13/viper"
-	"github.com/ltdai010/theta/blockchain"
-	"github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/common/util"
-	"github.com/ltdai010/theta/consensus"
-	"github.com/ltdai010/theta/core"
-	dp "github.com/ltdai010/theta/dispatcher"
-	"github.com/ltdai010/theta/version"
+	"theta/blockchain"
+	"theta/common"
+	"theta/common/util"
+	"theta/consensus"
+	"theta/core"
+	dp "theta/dispatcher"
+	"theta/version"
 )
 
 var logger *log.Entry = log.WithFields(log.Fields{"prefix": "reporter"})

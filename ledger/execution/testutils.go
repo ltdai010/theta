@@ -10,15 +10,15 @@ import (
 	log "github.com/sirupsen/logrus"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/ltdai010/theta/blockchain"
-	"github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/common/result"
-	"github.com/ltdai010/theta/core"
-	"github.com/ltdai010/theta/crypto"
-	st "github.com/ltdai010/theta/ledger/state"
+	"theta/blockchain"
+	"theta/common"
+	"theta/common/result"
+	"theta/core"
+	"theta/crypto"
+	st "theta/ledger/state"
 
-	"github.com/ltdai010/theta/ledger/types"
-	"github.com/ltdai010/theta/store/database/backend"
+	"theta/ledger/types"
+	"theta/store/database/backend"
 )
 
 // --------------- Test Utilities with Mocked Consensus Engine --------------- //

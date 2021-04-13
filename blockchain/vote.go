@@ -1,8 +1,8 @@
 package blockchain
 
 import (
-	"github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/core"
+	"theta/common"
+	"theta/core"
 )
 
 // voteIndexKey constructs the DB key for the given block hash.

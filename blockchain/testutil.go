@@ -4,10 +4,10 @@ import (
 	"fmt"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/core"
-	"github.com/ltdai010/theta/store/database/backend"
-	"github.com/ltdai010/theta/store/kvstore"
+	"theta/common"
+	"theta/core"
+	"theta/store/database/backend"
+	"theta/store/kvstore"
 )
 
 // CreateTestChain creates a chain for testing.

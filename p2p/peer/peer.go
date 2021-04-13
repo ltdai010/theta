@@ -11,13 +11,13 @@ import (
 
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/viper"
-	"github.com/ltdai010/theta/common"
-	cmn "github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/crypto"
-	cn "github.com/ltdai010/theta/p2p/connection"
-	nu "github.com/ltdai010/theta/p2p/netutil"
-	p2ptypes "github.com/ltdai010/theta/p2p/types"
-	"github.com/ltdai010/theta/rlp"
+	"theta/common"
+	cmn "theta/common"
+	"theta/crypto"
+	cn "theta/p2p/connection"
+	nu "theta/p2p/netutil"
+	p2ptypes "theta/p2p/types"
+	"theta/rlp"
 )
 
 var logger *log.Entry = log.WithFields(log.Fields{"prefix": "p2p"})

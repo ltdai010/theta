@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="12eeae34-fc96-4b6d-8820-99dbcfe50e89" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/thriftrpc/handler.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thriftrpc/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thriftrpc/thrift/rpc.thrift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thriftrpc/thrift/thriftgen.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blockchain/chain.go" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/chain.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blockchain/chain_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/chain_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blockchain/testutil.go" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/testutil.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blockchain/tx.go" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/tx.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blockchain/tx_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/tx_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blockchain/util_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/util_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blockchain/vote.go" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/vote.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blockchain/vote_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/vote_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/theta/cmd/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/theta/cmd/init.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/theta/cmd/root.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/theta/cmd/root.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/theta/cmd/start.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/theta/cmd/start.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/theta/cmd/version.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/theta/cmd/version.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/theta/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/theta/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/thetacli/cmd/backup/chain.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/thetacli/cmd/backup/chain.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/thetacli/cmd/backup/correction.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/thetacli/cmd/backup/correction.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/thetacli/cmd/backup/snapshot.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/thetacli/cmd/backup/snapshot.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/thetacli/cmd/call/smart_contract.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/thetacli/cmd/call/smart_contract.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/thetacli/cmd/daemon/daemon.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/thetacli/cmd/daemon/daemon.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/thetacli/cmd/key/delete.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/thetacli/cmd/key/delete.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/thetacli/cmd/key/list.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/thetacli/cmd/key/list.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/thetacli/cmd/key/new.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/thetacli/cmd/key/new.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/thetacli/cmd/key/password.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/thetacli/cmd/key/password.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/thetacli/cmd/query/account.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/thetacli/cmd/query/account.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/thetacli/cmd/query/block.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/thetacli/cmd/query/block.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/thetacli/cmd/query/gcp.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/thetacli/cmd/query/gcp.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/thetacli/cmd/query/guardian.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/thetacli/cmd/query/guardian.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/thetacli/cmd/query/peers.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/thetacli/cmd/query/peers.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/thetacli/cmd/query/split_rule.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/thetacli/cmd/query/split_rule.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/thetacli/cmd/query/status.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/thetacli/cmd/query/status.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/thetacli/cmd/query/tx.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/thetacli/cmd/query/tx.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/thetacli/cmd/query/vcp.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/thetacli/cmd/query/vcp.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/thetacli/cmd/query/version.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/thetacli/cmd/query/version.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/thetacli/cmd/root.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/thetacli/cmd/root.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/thetacli/cmd/tx/deposit_stake.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/thetacli/cmd/tx/deposit_stake.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/thetacli/cmd/tx/release_fund.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/thetacli/cmd/tx/release_fund.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/thetacli/cmd/tx/reserve_fund.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/thetacli/cmd/tx/reserve_fund.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/thetacli/cmd/tx/send.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/thetacli/cmd/tx/send.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/thetacli/cmd/tx/smart_contract.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/thetacli/cmd/tx/smart_contract.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/thetacli/cmd/tx/split_rule.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/thetacli/cmd/tx/split_rule.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/thetacli/cmd/tx/utils.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/thetacli/cmd/tx/utils.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/thetacli/cmd/tx/withdraw_stake.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/thetacli/cmd/tx/withdraw_stake.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/thetacli/cmd/version.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/thetacli/cmd/version.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/thetacli/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/thetacli/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/thetacli/rpc/key.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/thetacli/rpc/key.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/thetacli/rpc/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/thetacli/rpc/server.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/thetacli/rpc/tx.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/thetacli/rpc/tx.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/hexutil/json_example_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/common/hexutil/json_example_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/json.go" beforeDir="false" afterPath="$PROJECT_DIR$/common/json.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/math/big_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/common/math/big_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/metrics/exp/exp.go" beforeDir="false" afterPath="$PROJECT_DIR$/common/metrics/exp/exp.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/metrics/librato/librato.go" beforeDir="false" afterPath="$PROJECT_DIR$/common/metrics/librato/librato.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/types.go" beforeDir="false" afterPath="$PROJECT_DIR$/common/types.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/util/log.go" beforeDir="false" afterPath="$PROJECT_DIR$/common/util/log.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consensus/engine.go" beforeDir="false" afterPath="$PROJECT_DIR$/consensus/engine.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consensus/engine_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/consensus/engine_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consensus/guardian.go" beforeDir="false" afterPath="$PROJECT_DIR$/consensus/guardian.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consensus/state.go" beforeDir="false" afterPath="$PROJECT_DIR$/consensus/state.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consensus/state_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/consensus/state_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consensus/testutil.go" beforeDir="false" afterPath="$PROJECT_DIR$/consensus/testutil.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consensus/validator.go" beforeDir="false" afterPath="$PROJECT_DIR$/consensus/validator.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/block.go" beforeDir="false" afterPath="$PROJECT_DIR$/core/block.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/block_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/core/block_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/bloom.go" beforeDir="false" afterPath="$PROJECT_DIR$/core/bloom.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/consensus.go" beforeDir="false" afterPath="$PROJECT_DIR$/core/consensus.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/guardian.go" beforeDir="false" afterPath="$PROJECT_DIR$/core/guardian.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/guardian_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/core/guardian_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/hardcode_block_hashes.go" beforeDir="false" afterPath="$PROJECT_DIR$/core/hardcode_block_hashes.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/ledger.go" beforeDir="false" afterPath="$PROJECT_DIR$/core/ledger.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/snapshot.go" beforeDir="false" afterPath="$PROJECT_DIR$/core/snapshot.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/stake.go" beforeDir="false" afterPath="$PROJECT_DIR$/core/stake.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/stake_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/core/stake_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/testutil.go" beforeDir="false" afterPath="$PROJECT_DIR$/core/testutil.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/validator.go" beforeDir="false" afterPath="$PROJECT_DIR$/core/validator.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/validator_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/core/validator_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/vote.go" beforeDir="false" afterPath="$PROJECT_DIR$/core/vote.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/vote_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/core/vote_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypto/bls/bls.go" beforeDir="false" afterPath="$PROJECT_DIR$/crypto/bls/bls.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypto/bn256/bn256_fast.go" beforeDir="false" afterPath="$PROJECT_DIR$/crypto/bn256/bn256_fast.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypto/bn256/bn256_fuzz.go" beforeDir="false" afterPath="$PROJECT_DIR$/crypto/bn256/bn256_fuzz.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypto/bn256/bn256_slow.go" beforeDir="false" afterPath="$PROJECT_DIR$/crypto/bn256/bn256_slow.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypto/crypto.go" beforeDir="false" afterPath="$PROJECT_DIR$/crypto/crypto.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypto/crypto_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/crypto/crypto_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypto/ecies/ecies_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/crypto/ecies/ecies_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypto/ecies/params.go" beforeDir="false" afterPath="$PROJECT_DIR$/crypto/ecies/params.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypto/keyutils.go" beforeDir="false" afterPath="$PROJECT_DIR$/crypto/keyutils.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypto/keyutils_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/crypto/keyutils_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypto/signatureutils.go" beforeDir="false" afterPath="$PROJECT_DIR$/crypto/signatureutils.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypto/signatureutils_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/crypto/signatureutils_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypto/testutils.go" beforeDir="false" afterPath="$PROJECT_DIR$/crypto/testutils.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher/dispatcher.go" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher/dispatcher.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher/types.go" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher/types.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/commands/generator.go" beforeDir="false" afterPath="$PROJECT_DIR$/docs/commands/generator.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/glide.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/glide.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/integration/docker/build/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/integration/docker/build/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/integration/tools/dump_storeview/dump_storeview.go" beforeDir="false" afterPath="$PROJECT_DIR$/integration/tools/dump_storeview/dump_storeview.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/integration/tools/encrypt_sk/encrypt_sk.go" beforeDir="false" afterPath="$PROJECT_DIR$/integration/tools/encrypt_sk/encrypt_sk.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/integration/tools/generate_genesis/generate_genesis.go" beforeDir="false" afterPath="$PROJECT_DIR$/integration/tools/generate_genesis/generate_genesis.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/integration/tools/hex_obj_parser/hex_obj_parser.go" beforeDir="false" afterPath="$PROJECT_DIR$/integration/tools/hex_obj_parser/hex_obj_parser.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/integration/tools/import_chain/import_chain.go" beforeDir="false" afterPath="$PROJECT_DIR$/integration/tools/import_chain/import_chain.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/integration/tools/inspect_data/inspect_data.go" beforeDir="false" afterPath="$PROJECT_DIR$/integration/tools/inspect_data/inspect_data.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/integration/tools/query_db/query_db.go" beforeDir="false" afterPath="$PROJECT_DIR$/integration/tools/query_db/query_db.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/integration/tools/sign_hex_msg/sign_hex_msg.go" beforeDir="false" afterPath="$PROJECT_DIR$/integration/tools/sign_hex_msg/sign_hex_msg.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/execution/executils.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/execution/executils.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/execution/executor.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/execution/executor.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/execution/regular_tx_execution_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/execution/regular_tx_execution_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/execution/smart_contract_tx_execution_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/execution/smart_contract_tx_execution_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/execution/testutils.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/execution/testutils.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/execution/tx_coinbase.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/execution/tx_coinbase.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/execution/tx_deposit_stake.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/execution/tx_deposit_stake.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/execution/tx_release_fund.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/execution/tx_release_fund.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/execution/tx_reserve_fund.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/execution/tx_reserve_fund.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/execution/tx_send.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/execution/tx_send.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/execution/tx_service_payment.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/execution/tx_service_payment.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/execution/tx_slash.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/execution/tx_slash.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/execution/tx_smart_contract.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/execution/tx_smart_contract.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/execution/tx_split_rule.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/execution/tx_split_rule.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/execution/tx_withdraw_stake.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/execution/tx_withdraw_stake.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/ledger.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/ledger.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/ledger_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/ledger_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/state/keys.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/state/keys.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/state/state.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/state/state.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/state/state_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/state/state_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/state/storeview.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/state/storeview.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/state/storeview_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/state/storeview_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/testutils.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/testutils.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/types/account.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/types/account.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/types/coin.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/types/coin.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/types/coin_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/types/coin_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/types/height_list_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/types/height_list_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/types/log.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/types/log.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/types/log_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/types/log_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/types/reserved_fund.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/types/reserved_fund.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/types/serialization.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/types/serialization.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/types/serialization_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/types/serialization_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/types/slash_intent.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/types/slash_intent.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/types/split_rule.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/types/split_rule.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/types/testutils.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/types/testutils.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/types/tx.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/types/tx.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/types/tx_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/types/tx_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/vm/analysis_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/vm/analysis_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/vm/asm/asm.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/vm/asm/asm.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/vm/asm/compiler.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/vm/asm/compiler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/vm/common.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/vm/common.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/vm/contract.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/vm/contract.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/vm/contracts.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/vm/contracts.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/vm/contracts_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/vm/contracts_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/vm/exec.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/vm/exec.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/vm/exec_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/vm/exec_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/vm/gas.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/vm/gas.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/vm/gas_table.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/vm/gas_table.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/vm/gen_structlog.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/vm/gen_structlog.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/vm/instructions.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/vm/instructions.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/vm/instructions_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/vm/instructions_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/vm/interface.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/vm/interface.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/vm/interpreter.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/vm/interpreter.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/vm/jump_table.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/vm/jump_table.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/vm/logger.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/vm/logger.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/vm/logger_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/vm/logger_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/vm/memory.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/vm/memory.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/vm/memory_table.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/vm/memory_table.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/vm/params/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/vm/params/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/vm/params/dao.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/vm/params/dao.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/vm/stack_table.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/vm/stack_table.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/vm/vm.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/vm/vm.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ledger/vm/vm_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/ledger/vm/vm_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mempool/mempool.go" beforeDir="false" afterPath="$PROJECT_DIR$/mempool/mempool.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mempool/mempool_message_handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/mempool/mempool_message_handler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mempool/mempool_message_handler_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/mempool/mempool_message_handler_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mempool/mempool_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/mempool/mempool_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mempool/tx_bookkeeper.go" beforeDir="false" afterPath="$PROJECT_DIR$/mempool/tx_bookkeeper.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mempool/tx_bookkeeper_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/mempool/tx_bookkeeper_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netsync/encode.go" beforeDir="false" afterPath="$PROJECT_DIR$/netsync/encode.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netsync/encode_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/netsync/encode_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netsync/request.go" beforeDir="false" afterPath="$PROJECT_DIR$/netsync/request.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netsync/sync.go" beforeDir="false" afterPath="$PROJECT_DIR$/netsync/sync.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netsync/sync_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/netsync/sync_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node/node.go" beforeDir="false" afterPath="$PROJECT_DIR$/node/node.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p2p/connection/auth.go" beforeDir="false" afterPath="$PROJECT_DIR$/p2p/connection/auth.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p2p/connection/channel.go" beforeDir="false" afterPath="$PROJECT_DIR$/p2p/connection/channel.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p2p/connection/channel_group.go" beforeDir="false" afterPath="$PROJECT_DIR$/p2p/connection/channel_group.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p2p/connection/channel_group_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/p2p/connection/channel_group_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p2p/connection/channel_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/p2p/connection/channel_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p2p/connection/connection.go" beforeDir="false" afterPath="$PROJECT_DIR$/p2p/connection/connection.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p2p/connection/connection_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/p2p/connection/connection_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p2p/connection/packet.go" beforeDir="false" afterPath="$PROJECT_DIR$/p2p/connection/packet.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p2p/connection/packet_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/p2p/connection/packet_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p2p/connection/recv_buffer_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/p2p/connection/recv_buffer_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p2p/connection/send_buffer.go" beforeDir="false" afterPath="$PROJECT_DIR$/p2p/connection/send_buffer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p2p/connection/send_buffer_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/p2p/connection/send_buffer_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p2p/interface.go" beforeDir="false" afterPath="$PROJECT_DIR$/p2p/interface.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p2p/messenger/addr_book.go" beforeDir="false" afterPath="$PROJECT_DIR$/p2p/messenger/addr_book.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p2p/messenger/addr_book_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/p2p/messenger/addr_book_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p2p/messenger/disc_inbound_peer_listener.go" beforeDir="false" afterPath="$PROJECT_DIR$/p2p/messenger/disc_inbound_peer_listener.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p2p/messenger/disc_peer_discovery_message_handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/p2p/messenger/disc_peer_discovery_message_handler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p2p/messenger/disc_peer_discovery_message_handler_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/p2p/messenger/disc_peer_discovery_message_handler_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p2p/messenger/disc_peer_no_response_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/p2p/messenger/disc_peer_no_response_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p2p/messenger/disc_seed_peer_connector.go" beforeDir="false" afterPath="$PROJECT_DIR$/p2p/messenger/disc_seed_peer_connector.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p2p/messenger/discovery.go" beforeDir="false" afterPath="$PROJECT_DIR$/p2p/messenger/discovery.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p2p/messenger/discovery_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/p2p/messenger/discovery_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p2p/messenger/messenger.go" beforeDir="false" afterPath="$PROJECT_DIR$/p2p/messenger/messenger.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p2p/messenger/messenger_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/p2p/messenger/messenger_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p2p/messenger/nat_manager.go" beforeDir="false" afterPath="$PROJECT_DIR$/p2p/messenger/nat_manager.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p2p/messenger/nat_manager_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/p2p/messenger/nat_manager_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p2p/peer/peer.go" beforeDir="false" afterPath="$PROJECT_DIR$/p2p/peer/peer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p2p/peer/peer_table.go" beforeDir="false" afterPath="$PROJECT_DIR$/p2p/peer/peer_table.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p2p/peer/peer_table_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/p2p/peer/peer_table_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p2p/peer/peer_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/p2p/peer/peer_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p2p/simulation/simnet.go" beforeDir="false" afterPath="$PROJECT_DIR$/p2p/simulation/simnet.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p2p/simulation/simnet_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/p2p/simulation/simnet_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p2p/types/testutils.go" beforeDir="false" afterPath="$PROJECT_DIR$/p2p/types/testutils.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p2p/types/types.go" beforeDir="false" afterPath="$PROJECT_DIR$/p2p/types/types.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p2p/types/types_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/p2p/types/types_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p2pl/interface.go" beforeDir="false" afterPath="$PROJECT_DIR$/p2pl/interface.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p2pl/messenger/messenger.go" beforeDir="false" afterPath="$PROJECT_DIR$/p2pl/messenger/messenger.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p2pl/messenger/messenger_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/p2pl/messenger/messenger_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p2pl/peer/peer.go" beforeDir="false" afterPath="$PROJECT_DIR$/p2pl/peer/peer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p2pl/peer/peer_table.go" beforeDir="false" afterPath="$PROJECT_DIR$/p2pl/peer/peer_table.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p2pl/transport/buffer/chunk.go" beforeDir="false" afterPath="$PROJECT_DIR$/p2pl/transport/buffer/chunk.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p2pl/transport/buffer/recv_buffer.go" beforeDir="false" afterPath="$PROJECT_DIR$/p2pl/transport/buffer/recv_buffer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p2pl/transport/buffer/send_buffer.go" beforeDir="false" afterPath="$PROJECT_DIR$/p2pl/transport/buffer/send_buffer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p2pl/transport/stream.go" beforeDir="false" afterPath="$PROJECT_DIR$/p2pl/transport/stream.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/reporter.go" beforeDir="false" afterPath="$PROJECT_DIR$/report/reporter.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc/backup.go" beforeDir="false" afterPath="$PROJECT_DIR$/rpc/backup.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc/call.go" beforeDir="false" afterPath="$PROJECT_DIR$/rpc/call.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/rpc/client.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc/lib/rpc-codec/jsonrpc2/bench_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/rpc/lib/rpc-codec/jsonrpc2/bench_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc/lib/rpc-codec/jsonrpc2/context_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/rpc/lib/rpc-codec/jsonrpc2/context_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc/lib/rpc-codec/jsonrpc2/example_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/rpc/lib/rpc-codec/jsonrpc2/example_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc/lib/rpc-codec/jsonrpc2/http_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/rpc/lib/rpc-codec/jsonrpc2/http_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc/query.go" beforeDir="false" afterPath="$PROJECT_DIR$/rpc/query.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/rpc/server.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc/tx.go" beforeDir="false" afterPath="$PROJECT_DIR$/rpc/tx.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc/tx_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/rpc/tx_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snapshot/chain_correction_export.go" beforeDir="false" afterPath="$PROJECT_DIR$/snapshot/chain_correction_export.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snapshot/chain_export.go" beforeDir="false" afterPath="$PROJECT_DIR$/snapshot/chain_export.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snapshot/snapshot_export.go" beforeDir="false" afterPath="$PROJECT_DIR$/snapshot/snapshot_export.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snapshot/snapshot_import.go" beforeDir="false" afterPath="$PROJECT_DIR$/snapshot/snapshot_import.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/database/backend/aerospike.go" beforeDir="false" afterPath="$PROJECT_DIR$/store/database/backend/aerospike.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/database/backend/aerospike_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/store/database/backend/aerospike_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/database/backend/badgerdb.go" beforeDir="false" afterPath="$PROJECT_DIR$/store/database/backend/badgerdb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/database/backend/badgerdb_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/store/database/backend/badgerdb_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/database/backend/leveldb.go" beforeDir="false" afterPath="$PROJECT_DIR$/store/database/backend/leveldb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/database/backend/leveldb_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/store/database/backend/leveldb_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/database/backend/memdb.go" beforeDir="false" afterPath="$PROJECT_DIR$/store/database/backend/memdb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/database/backend/mgodb.go" beforeDir="false" afterPath="$PROJECT_DIR$/store/database/backend/mgodb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/database/backend/mgodb_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/store/database/backend/mgodb_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/database/backend/mongodb.go" beforeDir="false" afterPath="$PROJECT_DIR$/store/database/backend/mongodb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/database/backend/mongodb_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/store/database/backend/mongodb_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/interface.go" beforeDir="false" afterPath="$PROJECT_DIR$/store/interface.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/kvstore/kvstore.go" beforeDir="false" afterPath="$PROJECT_DIR$/store/kvstore/kvstore.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/kvstore/kvstore_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/store/kvstore/kvstore_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/treestore/treestore.go" beforeDir="false" afterPath="$PROJECT_DIR$/store/treestore/treestore.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/treestore/treestore_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/store/treestore/treestore_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/trie/database.go" beforeDir="false" afterPath="$PROJECT_DIR$/store/trie/database.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/trie/errors.go" beforeDir="false" afterPath="$PROJECT_DIR$/store/trie/errors.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/trie/hasher.go" beforeDir="false" afterPath="$PROJECT_DIR$/store/trie/hasher.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/trie/iterator.go" beforeDir="false" afterPath="$PROJECT_DIR$/store/trie/iterator.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/trie/iterator_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/store/trie/iterator_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/trie/node.go" beforeDir="false" afterPath="$PROJECT_DIR$/store/trie/node.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/trie/proof.go" beforeDir="false" afterPath="$PROJECT_DIR$/store/trie/proof.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/trie/proof_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/store/trie/proof_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/trie/secure_trie.go" beforeDir="false" afterPath="$PROJECT_DIR$/store/trie/secure_trie.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/trie/secure_trie_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/store/trie/secure_trie_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/trie/sync.go" beforeDir="false" afterPath="$PROJECT_DIR$/store/trie/sync.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/trie/sync_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/store/trie/sync_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/trie/trie.go" beforeDir="false" afterPath="$PROJECT_DIR$/store/trie/trie.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/trie/trie_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/store/trie/trie_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wallet/coldwallet/coldwallet.go" beforeDir="false" afterPath="$PROJECT_DIR$/wallet/coldwallet/coldwallet.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wallet/coldwallet/coldwallet_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/wallet/coldwallet/coldwallet_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wallet/coldwallet/hid/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wallet/coldwallet/keystore/driver.go" beforeDir="false" afterPath="$PROJECT_DIR$/wallet/coldwallet/keystore/driver.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wallet/coldwallet/keystore/nano_ledger.go" beforeDir="false" afterPath="$PROJECT_DIR$/wallet/coldwallet/keystore/nano_ledger.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wallet/coldwallet/keystore/trezor.go" beforeDir="false" afterPath="$PROJECT_DIR$/wallet/coldwallet/keystore/trezor.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wallet/coldwallet/keystore/trezor/transport.go" beforeDir="false" afterPath="$PROJECT_DIR$/wallet/coldwallet/keystore/trezor/transport.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wallet/coldwallet/usb_hub.go" beforeDir="false" afterPath="$PROJECT_DIR$/wallet/coldwallet/usb_hub.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wallet/softwallet/keystore/key.go" beforeDir="false" afterPath="$PROJECT_DIR$/wallet/softwallet/keystore/key.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wallet/softwallet/keystore/keystore.go" beforeDir="false" afterPath="$PROJECT_DIR$/wallet/softwallet/keystore/keystore.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wallet/softwallet/keystore/ks_encrypted.go" beforeDir="false" afterPath="$PROJECT_DIR$/wallet/softwallet/keystore/ks_encrypted.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wallet/softwallet/keystore/ks_encrypted_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/wallet/softwallet/keystore/ks_encrypted_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wallet/softwallet/keystore/ks_plain.go" beforeDir="false" afterPath="$PROJECT_DIR$/wallet/softwallet/keystore/ks_plain.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wallet/softwallet/keystore/testutils.go" beforeDir="false" afterPath="$PROJECT_DIR$/wallet/softwallet/keystore/testutils.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wallet/softwallet/softwallet.go" beforeDir="false" afterPath="$PROJECT_DIR$/wallet/softwallet/softwallet.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wallet/softwallet/softwallet_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/wallet/softwallet/softwallet_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wallet/types/wallet.go" beforeDir="false" afterPath="$PROJECT_DIR$/wallet/types/wallet.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wallet/wallet.go" beforeDir="false" afterPath="$PROJECT_DIR$/wallet/wallet.go" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1r6cepMSa5Q8lDPHFTsDyXP551m" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="12eeae34-fc96-4b6d-8820-99dbcfe50e89" name="Default Changelist" comment="" />
+      <created>1618300079579</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1618300079579</updated>
+      <workItem from="1618300081369" duration="23000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

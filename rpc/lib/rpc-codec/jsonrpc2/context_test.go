@@ -12,7 +12,7 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/ltdai010/theta/rpc/lib/rpc-codec/jsonrpc2"
+	"theta/rpc/lib/rpc-codec/jsonrpc2"
 )
 
 type contextKey int

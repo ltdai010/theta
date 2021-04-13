@@ -6,10 +6,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/common/hexutil"
-	"github.com/ltdai010/theta/core"
-	"github.com/ltdai010/theta/crypto"
+	"theta/common"
+	"theta/common/hexutil"
+	"theta/core"
+	"theta/crypto"
 )
 
 const txTimeout = 60 * time.Second

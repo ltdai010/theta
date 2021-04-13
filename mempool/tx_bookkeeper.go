@@ -6,8 +6,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/crypto"
+	"theta/common"
+	"theta/crypto"
 )
 
 const defaultMaxNumTxs = uint(200000)

@@ -20,8 +20,8 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/ledger/vm/params"
+	"theta/common"
+	"theta/ledger/vm/params"
 )
 
 type dummyContractRef struct {

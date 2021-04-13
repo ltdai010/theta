@@ -5,9 +5,9 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/dispatcher"
-	"github.com/ltdai010/theta/rlp"
+	"theta/common"
+	"theta/dispatcher"
+	"theta/rlp"
 )
 
 // type MessageIDEnum uint8

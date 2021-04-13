@@ -6,9 +6,9 @@ import (
 
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
-	"github.com/ltdai010/theta/cmd/thetacli/cmd/utils"
-	"github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/rpc"
+	"theta/cmd/thetacli/cmd/utils"
+	"theta/common"
+	"theta/rpc"
 
 	rpcc "github.com/ybbus/jsonrpc"
 )

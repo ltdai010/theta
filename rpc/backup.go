@@ -4,8 +4,8 @@ import (
 	"os"
 	"path"
 
-	"github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/snapshot"
+	"theta/common"
+	"theta/snapshot"
 )
 
 // ------------------------------- BackupSnapshot -----------------------------------

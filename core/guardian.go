@@ -7,11 +7,11 @@ import (
 	"math/big"
 	"sort"
 
-	"github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/common/result"
-	"github.com/ltdai010/theta/crypto"
-	"github.com/ltdai010/theta/crypto/bls"
-	"github.com/ltdai010/theta/rlp"
+	"theta/common"
+	"theta/common/result"
+	"theta/crypto"
+	"theta/crypto/bls"
+	"theta/rlp"
 )
 
 //

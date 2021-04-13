@@ -14,7 +14,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ltdai010/theta/rpc/lib/rpc-codec/jsonrpc2"
+	"theta/rpc/lib/rpc-codec/jsonrpc2"
 )
 
 // Svc is an RPC service for testing.

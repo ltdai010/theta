@@ -35,11 +35,11 @@ import (
 	"time"
 
 	"github.com/golang/snappy"
-	"github.com/ltdai010/theta/crypto"
-	"github.com/ltdai010/theta/crypto/ecies"
-	"github.com/ltdai010/theta/crypto/secp256k1"
-	"github.com/ltdai010/theta/crypto/sha3"
-	"github.com/ltdai010/theta/rlp"
+	"theta/crypto"
+	"theta/crypto/ecies"
+	"theta/crypto/secp256k1"
+	"theta/crypto/sha3"
+	"theta/rlp"
 )
 
 const (

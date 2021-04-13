@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/common/result"
-	"github.com/ltdai010/theta/core"
-	"github.com/ltdai010/theta/store/database"
+	"theta/common"
+	"theta/common/result"
+	"theta/core"
+	"theta/store/database"
 )
 
 //

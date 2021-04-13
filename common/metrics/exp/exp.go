@@ -8,7 +8,7 @@ import (
 	"net/http"
 	"sync"
 
-	"github.com/ltdai010/theta/common/metrics"
+	"theta/common/metrics"
 )
 
 type exp struct {

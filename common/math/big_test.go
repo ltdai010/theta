@@ -22,7 +22,7 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/ltdai010/theta/common"
+	"theta/common"
 )
 
 func TestHexOrDecimal256(t *testing.T) {

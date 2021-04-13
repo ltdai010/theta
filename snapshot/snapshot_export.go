@@ -9,15 +9,15 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/ltdai010/theta/blockchain"
-	"github.com/ltdai010/theta/common"
-	cns "github.com/ltdai010/theta/consensus"
-	"github.com/ltdai010/theta/core"
-	"github.com/ltdai010/theta/ledger/state"
-	"github.com/ltdai010/theta/ledger/types"
-	"github.com/ltdai010/theta/store/database"
-	"github.com/ltdai010/theta/store/kvstore"
-	"github.com/ltdai010/theta/store/treestore"
+	"theta/blockchain"
+	"theta/common"
+	cns "theta/consensus"
+	"theta/core"
+	"theta/ledger/state"
+	"theta/ledger/types"
+	"theta/store/database"
+	"theta/store/kvstore"
+	"theta/store/treestore"
 )
 
 func ExportSnapshot(db database.Database, consensus *cns.ConsensusEngine, chain *blockchain.Chain, snapshotDir string, height uint64) (string, error) {

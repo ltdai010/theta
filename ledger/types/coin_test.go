@@ -8,7 +8,7 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/ltdai010/theta/rlp"
+	"theta/rlp"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

@@ -12,12 +12,12 @@ import (
 	"time"
 
 	log "github.com/sirupsen/logrus"
-	"github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/common/timer"
-	"github.com/ltdai010/theta/p2p/connection/flowrate"
-	"github.com/ltdai010/theta/p2p/types"
-	p2ptypes "github.com/ltdai010/theta/p2p/types"
-	"github.com/ltdai010/theta/rlp"
+	"theta/common"
+	"theta/common/timer"
+	"theta/p2p/connection/flowrate"
+	"theta/p2p/types"
+	p2ptypes "theta/p2p/types"
+	"theta/rlp"
 )
 
 var logger *log.Entry = log.WithFields(log.Fields{"prefix": "p2p"})

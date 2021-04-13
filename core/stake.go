@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/ltdai010/theta/common"
+	"theta/common"
 )
 
 const (

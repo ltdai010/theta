@@ -19,7 +19,7 @@ package params
 import (
 	"math/big"
 
-	"github.com/ltdai010/theta/common"
+	"theta/common"
 )
 
 // DAOForkBlockExtra is the block header extra-data field to set for the DAO fork

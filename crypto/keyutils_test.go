@@ -27,8 +27,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/common/hexutil"
+	"theta/common"
+	"theta/common/hexutil"
 )
 
 var testAddrHex = "970e8128ab834e8eac17ab8e3812f010678cf791"

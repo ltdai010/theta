@@ -5,10 +5,10 @@ import (
 	"strings"
 
 	"github.com/spf13/cobra"
-	"github.com/ltdai010/theta/cmd/thetacli/cmd/utils"
-	"github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/wallet"
-	wtypes "github.com/ltdai010/theta/wallet/types"
+	"theta/cmd/thetacli/cmd/utils"
+	"theta/common"
+	"theta/wallet"
+	wtypes "theta/wallet/types"
 )
 
 // deleteCmd deletes the key corresponding to the given address

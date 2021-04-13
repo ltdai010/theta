@@ -6,9 +6,9 @@ import (
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/crypto"
-	"github.com/ltdai010/theta/rlp"
+	"theta/common"
+	"theta/crypto"
+	"theta/rlp"
 )
 
 func TestBlockEncoding(t *testing.T) {

@@ -31,11 +31,11 @@ import (
 	"testing/quick"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/crypto"
-	"github.com/ltdai010/theta/rlp"
-	"github.com/ltdai010/theta/store/database"
-	dbbackend "github.com/ltdai010/theta/store/database/backend"
+	"theta/common"
+	"theta/crypto"
+	"theta/rlp"
+	"theta/store/database"
+	dbbackend "theta/store/database/backend"
 )
 
 func init() {

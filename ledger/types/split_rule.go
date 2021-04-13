@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/ltdai010/theta/common"
+	"theta/common"
 )
 
 // ** Split Rule: Specifies the payment split agreement among participating addresses **

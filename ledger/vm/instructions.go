@@ -21,11 +21,11 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/common/math"
-	"github.com/ltdai010/theta/crypto"
-	"github.com/ltdai010/theta/ledger/types"
-	"github.com/ltdai010/theta/ledger/vm/params"
+	"theta/common"
+	"theta/common/math"
+	"theta/crypto"
+	"theta/ledger/types"
+	"theta/ledger/vm/params"
 )
 
 var (

@@ -20,9 +20,9 @@ package backend
 import (
 	"sync"
 
-	"github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/store"
-	"github.com/ltdai010/theta/store/database"
+	"theta/common"
+	"theta/store"
+	"theta/store/database"
 )
 
 /*

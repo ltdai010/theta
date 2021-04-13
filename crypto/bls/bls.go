@@ -5,8 +5,8 @@ import (
 	"sync"
 
 	bh "github.com/herumi/bls-eth-go-binary/bls"
-	"github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/rlp"
+	"theta/common"
+	"theta/rlp"
 )
 
 func init() {

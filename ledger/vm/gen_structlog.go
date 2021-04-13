@@ -6,9 +6,9 @@ import (
 	"encoding/json"
 	"math/big"
 
-	"github.com/ltdai010/theta/common"
-	"github.com/ltdai010/theta/common/hexutil"
-	"github.com/ltdai010/theta/common/math"
+	"theta/common"
+	"theta/common/hexutil"
+	"theta/common/math"
 )
 
 var _ = (*structLogMarshaling)(nil)
