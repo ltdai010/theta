@@ -27,8 +27,8 @@ import (
 	"github.com/karalabe/hid"
 	log "github.com/sirupsen/logrus"
 
-	ks "github.com/thetatoken/theta/wallet/coldwallet/keystore"
-	"github.com/thetatoken/theta/wallet/types"
+	ks "github.com/ltdai010/theta/wallet/coldwallet/keystore"
+	"github.com/ltdai010/theta/wallet/types"
 )
 
 var logger *log.Entry = log.WithFields(log.Fields{"prefix": "wallet"})

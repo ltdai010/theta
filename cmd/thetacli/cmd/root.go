@@ -6,16 +6,16 @@ import (
 	"path"
 	"strings"
 
-	"github.com/thetatoken/theta/cmd/thetacli/cmd/backup"
+	"github.com/ltdai010/theta/cmd/thetacli/cmd/backup"
 
 	homedir "github.com/mitchellh/go-homedir"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
-	"github.com/thetatoken/theta/cmd/thetacli/cmd/call"
-	"github.com/thetatoken/theta/cmd/thetacli/cmd/daemon"
-	"github.com/thetatoken/theta/cmd/thetacli/cmd/key"
-	"github.com/thetatoken/theta/cmd/thetacli/cmd/query"
-	"github.com/thetatoken/theta/cmd/thetacli/cmd/tx"
+	"github.com/ltdai010/theta/cmd/thetacli/cmd/call"
+	"github.com/ltdai010/theta/cmd/thetacli/cmd/daemon"
+	"github.com/ltdai010/theta/cmd/thetacli/cmd/key"
+	"github.com/ltdai010/theta/cmd/thetacli/cmd/query"
+	"github.com/ltdai010/theta/cmd/thetacli/cmd/tx"
 )
 
 var cfgPath string

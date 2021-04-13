@@ -26,8 +26,8 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/thetatoken/theta/store"
-	"github.com/thetatoken/theta/store/database"
+	"github.com/ltdai010/theta/store"
+	"github.com/ltdai010/theta/store/database"
 )
 
 func newTestLDB() (*LDBDatabase, func()) {

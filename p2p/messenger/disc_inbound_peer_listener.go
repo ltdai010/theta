@@ -9,9 +9,9 @@ import (
 	"time"
 
 	"github.com/spf13/viper"
-	"github.com/thetatoken/theta/common"
-	"github.com/thetatoken/theta/p2p/netutil"
-	pr "github.com/thetatoken/theta/p2p/peer"
+	"github.com/ltdai010/theta/common"
+	"github.com/ltdai010/theta/p2p/netutil"
+	pr "github.com/ltdai010/theta/p2p/peer"
 
 	gonetutil "golang.org/x/net/netutil"
 )

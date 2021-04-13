@@ -24,7 +24,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/thetatoken/theta/common"
+	"github.com/ltdai010/theta/common"
 )
 
 func Test_PBKDF2_1(t *testing.T) {

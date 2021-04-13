@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/thetatoken/theta/common"
+	"github.com/ltdai010/theta/common"
 )
 
 // SlashIntent contains the address, reserve sequence of the account to

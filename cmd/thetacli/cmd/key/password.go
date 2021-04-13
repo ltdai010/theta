@@ -4,10 +4,10 @@ import (
 	"fmt"
 
 	"github.com/spf13/cobra"
-	"github.com/thetatoken/theta/cmd/thetacli/cmd/utils"
-	"github.com/thetatoken/theta/common"
-	"github.com/thetatoken/theta/wallet"
-	wtypes "github.com/thetatoken/theta/wallet/types"
+	"github.com/ltdai010/theta/cmd/thetacli/cmd/utils"
+	"github.com/ltdai010/theta/common"
+	"github.com/ltdai010/theta/wallet"
+	wtypes "github.com/ltdai010/theta/wallet/types"
 )
 
 // passwordCmd updates the password for the key corresponding to the given address

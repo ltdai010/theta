@@ -19,7 +19,7 @@ package vm
 import (
 	"math/big"
 
-	"github.com/thetatoken/theta/common"
+	"github.com/ltdai010/theta/common"
 )
 
 // ContractRef is a reference to the contract's backing object

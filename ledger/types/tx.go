@@ -7,12 +7,12 @@ import (
 	"log"
 	"math/big"
 
-	"github.com/thetatoken/theta/common"
-	"github.com/thetatoken/theta/common/result"
-	"github.com/thetatoken/theta/core"
-	"github.com/thetatoken/theta/crypto"
-	"github.com/thetatoken/theta/crypto/bls"
-	"github.com/thetatoken/theta/rlp"
+	"github.com/ltdai010/theta/common"
+	"github.com/ltdai010/theta/common/result"
+	"github.com/ltdai010/theta/core"
+	"github.com/ltdai010/theta/crypto"
+	"github.com/ltdai010/theta/crypto/bls"
+	"github.com/ltdai010/theta/rlp"
 )
 
 /*

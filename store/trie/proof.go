@@ -21,10 +21,10 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/thetatoken/theta/common"
-	"github.com/thetatoken/theta/crypto"
-	"github.com/thetatoken/theta/rlp"
-	"github.com/thetatoken/theta/store/database"
+	"github.com/ltdai010/theta/common"
+	"github.com/ltdai010/theta/crypto"
+	"github.com/ltdai010/theta/rlp"
+	"github.com/ltdai010/theta/store/database"
 )
 
 // Prove constructs a merkle proof for key. The result contains all encoded nodes

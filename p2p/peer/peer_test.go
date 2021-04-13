@@ -12,12 +12,12 @@ import (
 	log "github.com/sirupsen/logrus"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/thetatoken/theta/common"
-	"github.com/thetatoken/theta/crypto"
-	cn "github.com/thetatoken/theta/p2p/connection"
-	nu "github.com/thetatoken/theta/p2p/netutil"
-	p2ptypes "github.com/thetatoken/theta/p2p/types"
-	"github.com/thetatoken/theta/rlp"
+	"github.com/ltdai010/theta/common"
+	"github.com/ltdai010/theta/crypto"
+	cn "github.com/ltdai010/theta/p2p/connection"
+	nu "github.com/ltdai010/theta/p2p/netutil"
+	p2ptypes "github.com/ltdai010/theta/p2p/types"
+	"github.com/ltdai010/theta/rlp"
 )
 
 func TestPeerHandshakeAndCommunication(t *testing.T) {

@@ -3,7 +3,7 @@ package connection
 import (
 	"fmt"
 
-	"github.com/thetatoken/theta/common"
+	"github.com/ltdai010/theta/common"
 )
 
 const (

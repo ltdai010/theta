@@ -21,7 +21,7 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/thetatoken/theta/common"
+	"github.com/ltdai010/theta/common"
 )
 
 // precompiledTest defines the input/output pairs for precompiled contract tests.

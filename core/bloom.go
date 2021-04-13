@@ -20,8 +20,8 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/thetatoken/theta/common/hexutil"
-	"github.com/thetatoken/theta/crypto"
+	"github.com/ltdai010/theta/common/hexutil"
+	"github.com/ltdai010/theta/crypto"
 )
 
 type bytesBacked interface {

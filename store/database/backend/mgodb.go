@@ -3,8 +3,8 @@ package backend
 import (
 	"time"
 
-	"github.com/thetatoken/theta/store"
-	"github.com/thetatoken/theta/store/database"
+	"github.com/ltdai010/theta/store"
+	"github.com/ltdai010/theta/store/database"
 	"gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"
 )

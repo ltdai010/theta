@@ -3,8 +3,8 @@ package core
 import (
 	"math/big"
 
-	"github.com/thetatoken/theta/common"
-	"github.com/thetatoken/theta/common/result"
+	"github.com/ltdai010/theta/common"
+	"github.com/ltdai010/theta/common/result"
 )
 
 type ViewSelector int

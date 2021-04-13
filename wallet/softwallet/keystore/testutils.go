@@ -28,7 +28,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/thetatoken/theta/crypto"
+	"github.com/ltdai010/theta/crypto"
 )
 
 const (

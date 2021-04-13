@@ -6,10 +6,10 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"github.com/thetatoken/theta/wallet/coldwallet"
-	cw "github.com/thetatoken/theta/wallet/coldwallet"
-	sw "github.com/thetatoken/theta/wallet/softwallet"
-	"github.com/thetatoken/theta/wallet/types"
+	"github.com/ltdai010/theta/wallet/coldwallet"
+	cw "github.com/ltdai010/theta/wallet/coldwallet"
+	sw "github.com/ltdai010/theta/wallet/softwallet"
+	"github.com/ltdai010/theta/wallet/types"
 )
 
 var logger *log.Entry = log.WithFields(log.Fields{"prefix": "wallet"})

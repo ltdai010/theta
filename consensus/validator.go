@@ -5,8 +5,8 @@ import (
 	"math/rand"
 
 	log "github.com/sirupsen/logrus"
-	"github.com/thetatoken/theta/common"
-	"github.com/thetatoken/theta/core"
+	"github.com/ltdai010/theta/common"
+	"github.com/ltdai010/theta/core"
 )
 
 const MaxValidatorCount int = 31

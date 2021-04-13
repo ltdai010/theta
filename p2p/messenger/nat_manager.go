@@ -7,11 +7,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/thetatoken/theta/common"
-	"github.com/thetatoken/theta/p2p/nat"
-	pr "github.com/thetatoken/theta/p2p/peer"
-	"github.com/thetatoken/theta/p2p/types"
-	"github.com/thetatoken/theta/rlp"
+	"github.com/ltdai010/theta/common"
+	"github.com/ltdai010/theta/p2p/nat"
+	pr "github.com/ltdai010/theta/p2p/peer"
+	"github.com/ltdai010/theta/p2p/types"
+	"github.com/ltdai010/theta/rlp"
 )
 
 const (

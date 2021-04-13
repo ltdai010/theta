@@ -1,4 +1,4 @@
-module github.com/thetatoken/theta/common
+module github.com/ltdai010/theta/common
 
 go 1.14
 

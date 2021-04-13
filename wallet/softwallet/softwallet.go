@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/thetatoken/theta/common"
-	"github.com/thetatoken/theta/crypto"
-	ks "github.com/thetatoken/theta/wallet/softwallet/keystore"
-	"github.com/thetatoken/theta/wallet/types"
+	"github.com/ltdai010/theta/common"
+	"github.com/ltdai010/theta/crypto"
+	ks "github.com/ltdai010/theta/wallet/softwallet/keystore"
+	"github.com/ltdai010/theta/wallet/types"
 )
 
 var _ types.Wallet = (*SoftWallet)(nil)

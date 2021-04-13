@@ -10,8 +10,8 @@ import (
 	"bytes"
 	"math/big"
 
-	cloudflare "github.com/thetatoken/theta/crypto/bn256/cloudflare"
-	google "github.com/thetatoken/theta/crypto/bn256/google"
+	cloudflare "github.com/ltdai010/theta/crypto/bn256/cloudflare"
+	google "github.com/ltdai010/theta/crypto/bn256/google"
 )
 
 // FuzzAdd fuzzez bn256 addition between the Google and Cloudflare libraries.

@@ -7,12 +7,12 @@ import (
 
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/viper"
-	cmn "github.com/thetatoken/theta/common"
-	p2ptypes "github.com/thetatoken/theta/p2p/types"
-	"github.com/thetatoken/theta/p2pl/transport"
+	cmn "github.com/ltdai010/theta/common"
+	p2ptypes "github.com/ltdai010/theta/p2p/types"
+	"github.com/ltdai010/theta/p2pl/transport"
 
 	"github.com/libp2p/go-libp2p-core/network"
-	"github.com/thetatoken/theta/rlp"
+	"github.com/ltdai010/theta/rlp"
 
 	pr "github.com/libp2p/go-libp2p-core/peer"
 	ma "github.com/multiformats/go-multiaddr"

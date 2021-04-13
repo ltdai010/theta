@@ -8,9 +8,9 @@ import (
 	"github.com/pkg/errors"
 	log "github.com/sirupsen/logrus"
 
-	"github.com/thetatoken/theta/common"
-	"github.com/thetatoken/theta/core"
-	"github.com/thetatoken/theta/store"
+	"github.com/ltdai010/theta/common"
+	"github.com/ltdai010/theta/core"
+	"github.com/ltdai010/theta/store"
 )
 
 const maxDistance = 2000

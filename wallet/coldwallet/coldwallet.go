@@ -7,10 +7,10 @@ import (
 
 	"github.com/karalabe/hid"
 
-	"github.com/thetatoken/theta/common"
-	"github.com/thetatoken/theta/crypto"
-	ks "github.com/thetatoken/theta/wallet/coldwallet/keystore"
-	"github.com/thetatoken/theta/wallet/types"
+	"github.com/ltdai010/theta/common"
+	"github.com/ltdai010/theta/crypto"
+	ks "github.com/ltdai010/theta/wallet/coldwallet/keystore"
+	"github.com/ltdai010/theta/wallet/types"
 )
 
 var _ types.Wallet = (*ColdWallet)(nil)

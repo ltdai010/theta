@@ -3,8 +3,8 @@ package p2pl
 import (
 	"context"
 
-	"github.com/thetatoken/theta/common"
-	"github.com/thetatoken/theta/p2p/types"
+	"github.com/ltdai010/theta/common"
+	"github.com/ltdai010/theta/p2p/types"
 )
 
 //

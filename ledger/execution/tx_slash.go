@@ -3,11 +3,11 @@ package execution
 import (
 	"math/big"
 
-	"github.com/thetatoken/theta/common"
-	"github.com/thetatoken/theta/common/result"
-	"github.com/thetatoken/theta/core"
-	st "github.com/thetatoken/theta/ledger/state"
-	"github.com/thetatoken/theta/ledger/types"
+	"github.com/ltdai010/theta/common"
+	"github.com/ltdai010/theta/common/result"
+	"github.com/ltdai010/theta/core"
+	st "github.com/ltdai010/theta/ledger/state"
+	"github.com/ltdai010/theta/ledger/types"
 )
 
 var _ TxExecutor = (*SlashTxExecutor)(nil)

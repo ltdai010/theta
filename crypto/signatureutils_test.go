@@ -23,9 +23,9 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/thetatoken/theta/common"
-	"github.com/thetatoken/theta/common/hexutil"
-	"github.com/thetatoken/theta/common/math"
+	"github.com/ltdai010/theta/common"
+	"github.com/ltdai010/theta/common/hexutil"
+	"github.com/ltdai010/theta/common/math"
 )
 
 var (

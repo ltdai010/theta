@@ -1,10 +1,10 @@
 package kvstore
 
 import (
-	"github.com/thetatoken/theta/common"
-	"github.com/thetatoken/theta/rlp"
-	"github.com/thetatoken/theta/store"
-	"github.com/thetatoken/theta/store/database"
+	"github.com/ltdai010/theta/common"
+	"github.com/ltdai010/theta/rlp"
+	"github.com/ltdai010/theta/store"
+	"github.com/ltdai010/theta/store/database"
 )
 
 // NewKVStore create a new instance of KVStore.
