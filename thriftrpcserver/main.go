@@ -3,9 +3,7 @@ package main
 import (
 	"fmt"
 	"github.com/apache/thrift/lib/go/thrift"
-	"github.com/spf13/viper"
 	"log"
-	"theta/cmd/thetacli/cmd/utils"
 	"theta/thrift/gen-go/rpc/theta"
 )
 
@@ -19,7 +17,9 @@ func main()  {
 		log.Fatal(err)
 	}
 	fmt.Printf("%T\n", socket)
-	handler := &RpcHandler{serverAddress: viper.GetString(utils.CfgRemoteRPCEndpoint)}
+	//http://guardian-testnet-rpc.thetatoken.org:16888/rpc
+	handler := &RpcHandler{serverAddress: "http://localhost:16888/rpc",
+		chainID: "testnet_sapphire"}
 	processor := theta.NewThetaServiceProcessor(handler)
 	server := thrift.NewTSimpleServer4(processor, socket, transportFactory, protocolFactory)
 

@@ -9,5 +9,6 @@ const (
 
 func init() {
 	viper.SetDefault(CfgRemoteRPCEndpoint, "http://localhost:16888/rpc")
+	//viper.SetDefault(CfgRemoteRPCEndpoint, "http://guardian-testnet-rpc.thetatoken.org:16888/rpc")
 	viper.SetDefault(CfgDebug, false)
 }

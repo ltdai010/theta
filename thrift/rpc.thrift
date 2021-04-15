@@ -15,9 +15,9 @@ struct Version {
 
 struct Account {
 	1: string sequence,
-	2: Coin coin,
-	3: list<string> reserverd_funds,
-	4: string last_update_block_height,
+	2: Coin coins,
+	3: list<string> reserved_funds,
+	4: string last_updated_block_height,
 	5: string root,
 	6: string code
 }
@@ -50,7 +50,7 @@ struct RawTransaction {
 }
 
 struct TransactionInBlock {
-	1: RawTransaction raws,
+	1: RawTransaction raw,
 	2: i32 type,
 	3: string hash
 }
@@ -79,9 +79,6 @@ struct BroadcastRawTransaction {
 	2: TransactionBlock block
 }
 
-struct CallSmartContract {
-	1: string result
-}
 
 
 struct TransactionBlock {
@@ -100,12 +97,35 @@ struct TransactionBlock {
 }
 
 struct HCC {
-	1: list<string> Votes,
+	1: list<Vote> Votes
 	2: string BlockHash
+}
+
+struct Vote {
+    1: string Block,
+    2: i32 Epoch,
+    3: i32 Height,
+    4: string ID,
+    5: string Signature
 }
 
 struct BroadcastRawTransactionAsync {
 	1: string hash
+}
+
+struct BlockHeader {
+    1: string chain_id,
+    2: string epoch,
+    3: string height,
+    4: string parent,
+    5: string transactions_hash,
+    6: string state_hash,
+    7: string timestamp,
+    8: string proposer,
+    9: list<string> children,
+    10: i32 status,
+    11: string hash,
+    12: HCC hcc
 }
 
 struct Block {
@@ -120,7 +140,8 @@ struct Block {
 	9: list<string> children,
 	10: i32 status,
 	11: string hash,
-	12: list<TransactionBlock> transactions
+	12: list<TransactionInBlock> transactions,
+	13: HCC hcc
 }
 
 struct Coin {
@@ -156,13 +177,11 @@ struct StatusKey {
 }
 
 struct Send {
-	1: string chain_id,
-	2: string from_address,
-	3: string to,
-	4: string thetawei,
-	5: string tfuelwei,
-	6: string fee,
-	7: string private_key
+	1: string private_key,
+	2: string to,
+	3: string thetawei,
+	4: string tfuelwei,
+	5: string fee,
 }
 
 struct AccountResult {
@@ -184,7 +203,33 @@ struct Error {
     2: string message
 }
 
+struct SendToken {
+    1: string private_key,
+    2: string to,
+    3: i32 amount
+}
+
+struct SmartContractCall {
+    1: string contract_address,
+    2: string gas_used,
+    3: string vm_error,
+    4: string vm_return
+}
+
+struct BlockResult {
+    1: string jsonrpc,
+    2: i32 id,
+    3: Block result
+    4: Error error
+}
+
 service ThetaService{
-    Account getAccount(1: string account),
+    Account getAccount(1: string account)
 	BroadcastRawTransactionAsync sendTx(1: Send send)
+	i64 getTokenBalance(1: string address, 2: string contract_address, 3: string private_key)
+	BroadcastRawTransactionAsync sendToken(1: SendToken send)
+	Block GetBlock(1: string hash)
+	Block GetBlockByHeight(1: i64 height)
+	BlockHeader GetBlockHeader(1: string hash)
+	BlockHeader GetBlockHeaderByHeight(1: i64 height)
 }

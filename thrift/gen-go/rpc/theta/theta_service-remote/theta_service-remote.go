@@ -25,6 +25,12 @@ func Usage() {
   fmt.Fprintln(os.Stderr, "\nFunctions:")
   fmt.Fprintln(os.Stderr, "  Account getAccount(string account)")
   fmt.Fprintln(os.Stderr, "  BroadcastRawTransactionAsync sendTx(Send send)")
+  fmt.Fprintln(os.Stderr, "  i64 getTokenBalance(string address, string contract_address, string private_key)")
+  fmt.Fprintln(os.Stderr, "  BroadcastRawTransactionAsync sendToken(SendToken send)")
+  fmt.Fprintln(os.Stderr, "  Block GetBlock(string hash)")
+  fmt.Fprintln(os.Stderr, "  Block GetBlockByHeight(i64 height)")
+  fmt.Fprintln(os.Stderr, "  BlockHeader GetBlockHeader(string hash)")
+  fmt.Fprintln(os.Stderr, "  BlockHeader GetBlockHeaderByHeight(i64 height)")
   fmt.Fprintln(os.Stderr)
   os.Exit(0)
 }
@@ -161,24 +167,111 @@ func main() {
       fmt.Fprintln(os.Stderr, "SendTx requires 1 args")
       flag.Usage()
     }
-    arg15 := flag.Arg(1)
-    mbTrans16 := thrift.NewTMemoryBufferLen(len(arg15))
-    defer mbTrans16.Close()
-    _, err17 := mbTrans16.WriteString(arg15)
-    if err17 != nil {
+    arg28 := flag.Arg(1)
+    mbTrans29 := thrift.NewTMemoryBufferLen(len(arg28))
+    defer mbTrans29.Close()
+    _, err30 := mbTrans29.WriteString(arg28)
+    if err30 != nil {
       Usage()
       return
     }
-    factory18 := thrift.NewTJSONProtocolFactory()
-    jsProt19 := factory18.GetProtocol(mbTrans16)
+    factory31 := thrift.NewTJSONProtocolFactory()
+    jsProt32 := factory31.GetProtocol(mbTrans29)
     argvalue0 := theta.NewSend()
-    err20 := argvalue0.Read(jsProt19)
-    if err20 != nil {
+    err33 := argvalue0.Read(jsProt32)
+    if err33 != nil {
       Usage()
       return
     }
     value0 := argvalue0
     fmt.Print(client.SendTx(context.Background(), value0))
+    fmt.Print("\n")
+    break
+  case "getTokenBalance":
+    if flag.NArg() - 1 != 3 {
+      fmt.Fprintln(os.Stderr, "GetTokenBalance requires 3 args")
+      flag.Usage()
+    }
+    argvalue0 := flag.Arg(1)
+    value0 := argvalue0
+    argvalue1 := flag.Arg(2)
+    value1 := argvalue1
+    argvalue2 := flag.Arg(3)
+    value2 := argvalue2
+    fmt.Print(client.GetTokenBalance(context.Background(), value0, value1, value2))
+    fmt.Print("\n")
+    break
+  case "sendToken":
+    if flag.NArg() - 1 != 1 {
+      fmt.Fprintln(os.Stderr, "SendToken requires 1 args")
+      flag.Usage()
+    }
+    arg37 := flag.Arg(1)
+    mbTrans38 := thrift.NewTMemoryBufferLen(len(arg37))
+    defer mbTrans38.Close()
+    _, err39 := mbTrans38.WriteString(arg37)
+    if err39 != nil {
+      Usage()
+      return
+    }
+    factory40 := thrift.NewTJSONProtocolFactory()
+    jsProt41 := factory40.GetProtocol(mbTrans38)
+    argvalue0 := theta.NewSendToken()
+    err42 := argvalue0.Read(jsProt41)
+    if err42 != nil {
+      Usage()
+      return
+    }
+    value0 := argvalue0
+    fmt.Print(client.SendToken(context.Background(), value0))
+    fmt.Print("\n")
+    break
+  case "GetBlock":
+    if flag.NArg() - 1 != 1 {
+      fmt.Fprintln(os.Stderr, "GetBlock requires 1 args")
+      flag.Usage()
+    }
+    argvalue0 := flag.Arg(1)
+    value0 := argvalue0
+    fmt.Print(client.GetBlock(context.Background(), value0))
+    fmt.Print("\n")
+    break
+  case "GetBlockByHeight":
+    if flag.NArg() - 1 != 1 {
+      fmt.Fprintln(os.Stderr, "GetBlockByHeight requires 1 args")
+      flag.Usage()
+    }
+    argvalue0, err44 := (strconv.ParseInt(flag.Arg(1), 10, 64))
+    if err44 != nil {
+      Usage()
+      return
+    }
+    value0 := argvalue0
+    fmt.Print(client.GetBlockByHeight(context.Background(), value0))
+    fmt.Print("\n")
+    break
+  case "GetBlockHeader":
+    if flag.NArg() - 1 != 1 {
+      fmt.Fprintln(os.Stderr, "GetBlockHeader requires 1 args")
+      flag.Usage()
+    }
+    argvalue0 := flag.Arg(1)
+    value0 := argvalue0
+    fmt.Print(client.GetBlockHeader(context.Background(), value0))
+    fmt.Print("\n")
+    break
+  case "GetBlockHeaderByHeight":
+    if flag.NArg() - 1 != 1 {
+      fmt.Fprintln(os.Stderr, "GetBlockHeaderByHeight requires 1 args")
+      flag.Usage()
+    }
+    argvalue0, err46 := (strconv.ParseInt(flag.Arg(1), 10, 64))
+    if err46 != nil {
+      Usage()
+      return
+    }
+    value0 := argvalue0
+    fmt.Print(client.GetBlockHeaderByHeight(context.Background(), value0))
     fmt.Print("\n")
     break
   case "":
